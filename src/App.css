@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+.dash_board > h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: 35vw;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+.dash_board{
+  height: 100vh;
+}
+.main_div {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  border-top: 1px solid lightblue;
+}
+.input_comments {
+  width: 30vw;
+  border-right: 1px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.related_tweets {
+  overflow-y: scroll;
+  /* position: absolute; */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 28.4vw;
+  padding-left: 1vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input_div {
+  width: 25vw;
+  margin-left: 2.1vw;
+  margin-top: 2.5vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image {
+  border-radius: 50%;
+  height: 6vh;
+}
+.tweets_handle {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 1vh;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.graphs {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.chart {
+  margin-left: 10vw;
+  width: 50vw;
+}
+.graphs > p {
+  margin-left: 19vw;
+  color: rgb(50, 142, 248);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.tweet_msg {
+  margin-top: -1vh;
+}
+.user_name {
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  margin-top: 1.5vh;
+}
+.tweet_msg {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  width: 20vw;
+  max-width: 28vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1023px) {
+  .dash_board > h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    margin-left: -1vw;
   }
-  to {
-    transform: rotate(360deg);
+  .main_div {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .input_comments {
+    display: flex;
+    flex-direction: column;
+  }
+  #hash_tag {
+    width: 90vw;
+    padding: 0.6em 1.5em;
+    margin-left: 1.5vw;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .input_comments {
+    border: none;
+  }
+  .tweets {
+    width: 88vw;
+  }
+  .tweets > h4 {
+    margin-top: -1.5vh;
+    margin-left: 1.5vw;
+  }
+  .related_tweets {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5vw;
+    height: 40vh;
+    width: 88vw;
+  }
+  .user_name {
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    margin-top: 1.5vh;
+  }
+  .tweet_msg {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    width: 70vw;
+    max-width: 80vw;
+  }
+  .chart{
+    width: 102vw;
+    margin-left: -2vw;
+  }
+  .graphs{
+    margin-top: 0.5vh;
   }
 }
